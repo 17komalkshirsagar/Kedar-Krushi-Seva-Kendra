@@ -20,11 +20,11 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate authentication
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       if (email === 'admin@yourshop.com' && password === 'admin123') {
         localStorage.setItem('isAuthenticated', 'true');
         localStorage.setItem('userRole', 'admin');
@@ -92,7 +92,7 @@ export default function LoginPage() {
               Sign In
             </Button>
           </form>
-          
+
           <div className="relative my-4">
             <Separator />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -101,11 +101,11 @@ export default function LoginPage() {
               </span>
             </div>
           </div>
-          
-          <div className="text-sm text-muted-foreground space-y-1">
+
+          {/* <div className="text-sm text-muted-foreground space-y-1">
             <p><strong>Admin:</strong> admin@yourshop.com / admin123</p>
             <p><strong>User:</strong> any email / any password</p>
-          </div>
+          </div> */}
         </CardContent>
         <CardFooter>
           <div className="text-sm text-center w-full">
