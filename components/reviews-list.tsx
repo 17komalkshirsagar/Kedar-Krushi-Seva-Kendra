@@ -55,6 +55,46 @@ const reviews = [
     review: 'Outstanding customer service! They explained how to use the products properly and even followed up to check the results. Very professional.',
     crop: 'Wheat Farmer',
     verified: true
+  },
+  {
+    id: 6,
+    name: 'Jay Singh',
+    location: 'Gangapur, Maharashtra',
+    rating: 5,
+    date: '2 months ago',
+    review: 'Outstanding customer service! They explained how to use the products properly and even followed up to check the results. Very professional.',
+    crop: 'Wheat Farmer',
+    verified: true
+  },
+  {
+    id: 7,
+    name: 'Vikram Shan',
+    location: 'Gangapur, Maharashtra',
+    rating: 5,
+    date: '2 months ago',
+    review: 'Outstanding customer service! They explained how to use the products properly and even followed up to check the results. Very professional.',
+    crop: 'Wheat Farmer',
+    verified: true
+  },
+  {
+    id: 8,
+    name: 'Faiz',
+    location: 'Gangapur, Maharashtra',
+    rating: 5,
+    date: '2 months ago',
+    review: 'Outstanding customer service! They explained how to use the products properly and even followed up to check the results. Very professional.',
+    crop: 'Wheat Farmer',
+    verified: true
+  },
+  {
+    id: 9,
+    name: 'Vishal Khan',
+    location: 'Gangapur, Maharashtra',
+    rating: 5,
+    date: '2 months ago',
+    review: 'Outstanding customer service! They explained how to use the products properly and even followed up to check the results. Very professional.',
+    crop: 'Wheat Farmer',
+    verified: true
   }
 ];
 
@@ -64,9 +104,8 @@ function StarRating({ rating }: { rating: number }) {
       {[...Array(5)].map((_, i) => (
         <Star
           key={i}
-          className={`h-4 w-4 ${
-            i < rating ? 'text-yellow-400 fill-current' : 'text-muted-foreground'
-          }`}
+          className={`h-4 w-4 ${i < rating ? 'text-yellow-400 fill-current' : 'text-muted-foreground'
+            }`}
         />
       ))}
     </div>
