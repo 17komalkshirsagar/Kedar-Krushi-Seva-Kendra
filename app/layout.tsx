@@ -8,6 +8,7 @@ import { WhatsAppButton } from '@/components/whatsapp-button';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kedar-krushi-seva-kendra.vercel.app'),
   title: '  About Kedar Krushi Seva Kendra - Premium Agricultural Solutions |Chandrakant Kshirsagar',
   description: 'Leading agricultural shop in Chhatrapati Sambhajinagar offering quality insecticides, herbicides, fungicides, and seeds. Expert guidance for farmers with premium products.',
   keywords: 'agriculture, farming, pesticides, insecticides, herbicides, fungicides, seeds, fertilizers, Aurangabad, Sambhajinagar, Maharashtra',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourshopname.com',
+    url: 'https://kedar-krushi-seva-kendra.vercel.app',
     title: '  About Kedar Krushi Seva Kendra - Premium Agricultural Solutions',
     description: 'Leading agricultural shop offering quality farming products and expert guidance.',
     siteName: '  About Kedar Krushi Seva Kendra',

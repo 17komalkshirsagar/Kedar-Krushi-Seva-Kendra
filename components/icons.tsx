@@ -1,4 +1,6 @@
-import { Leaf, Loader2, LucideCrop as LucideProps } from 'lucide-react';
+
+import { Leaf, Loader2 } from 'lucide-react';
+import type { LucideProps } from 'lucide-react';
 
 export const Icons = {
   spinner: Loader2,
@@ -6,3 +8,4 @@ export const Icons = {
 };
 
 export type Icon = LucideProps;
+
